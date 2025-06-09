@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="display" class="display">0</div>
+
+        <!-- Row 1 -->
+        <div class="d-flex mb-2">
+        <button class="btn btn-danger btn-calc flex-fill mx-1" onclick="clearDisplay()">C</button>
+        <button class="btn btn-secondary btn-calc flex-fill mx-1" onclick="append('/')">÷</button>
+        <button class="btn btn-secondary btn-calc flex-fill mx-1" onclick="append('*')">×</button>
+        <button class="btn btn-warning btn-calc flex-fill mx-1" onclick="backspace()">←</button>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="d-flex mb-2">
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="append('7')">7</button>
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="append('8')">8</button>
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="append('9')">9</button>
+        <button class="btn btn-secondary btn-calc flex-fill mx-1" onclick="append('-')">−</button>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="d-flex mb-2">
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="append('4')">4</button>
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="append('5')">5</button>
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="append('6')">6</button>
+        <button class="btn btn-secondary btn-calc flex-fill mx-1" onclick="append('+')">+</button>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="d-flex mb-2">
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="append('1')">1</button>
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="append('2')">2</button>
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="append('3')">3</button>
+        <button class="btn btn-warning btn-calc flex-fill mx-1" onclick="append('%')">%</button> 
+        </div>
+
+        <!-- Row 5 -->
+        <div class="d-flex">
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="plusMinus()">+/-</button>
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="append('0')">0</button>
+        <button class="btn btn-dark btn-calc flex-fill mx-1" onclick="append('.')">.</button>
+        <button class="btn btn-success btn-calc flex-fill mx-1" onclick="calculate()">=</button> 
+        </div>
+    </div>
+<script src="home.js"></script>
+</body>
+</html>
