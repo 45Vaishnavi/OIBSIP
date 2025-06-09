@@ -1,0 +1,27 @@
+
+body {
+    background: linear-gradient(to right, #b8c3c5, #c6d0ae);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.tribute-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}    
+.section-title {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #004d40;
+    }
+.quote {
+    font-style: italic;
+    color: #007179;
+    }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #004d3a;
+    color: white;
+}
